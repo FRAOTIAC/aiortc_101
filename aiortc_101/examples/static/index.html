@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>WebRTC Stream</title>
+</head>
+<body>
+    <h1>WebRTC Image Stream</h1>
+    <video id="video" autoplay playsinline></video>
+    <script src="client.js"></script>
+    <!-- auto resize to fit the window -->
+    <script>
+        window.addEventListener("resize", function() {
+            document.getElementById("video").style.width = "100%";
+            document.getElementById("video").style.height = "100%";
+        });
+    </script>
+    
+</body>
+</html>
